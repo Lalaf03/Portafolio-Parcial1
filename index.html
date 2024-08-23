@@ -20,25 +20,27 @@
     <script type="module" src="script.js"></script>
   </head>
   <body>
-    <nav>
+    <nav class="fixed">
       <ul>
         <li><h3>Laura Fernández</h3></li>
-        <li><a href="
-          "><i class="fa-brands fa-instagram"></i></a></i></li>
+        <li>
+          <a href="https://www.instagram.com/laurafg0312/"><i class="fa-brands fa-instagram"></i></a></i>
+        </li>
       </ul>
       
       <ul>
         
-        <li><a href="#">Sobre mí</a></li>
-        <li><a href="#">Habilidades</a></li>
-        <li><a href="#">Proyectos</a></li>
+        <li><a href="#SobreMi"  class="selected">Sobre mí</a></li>
+        <li><a href="#Habilidades"  class="selected">Habilidades</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="ignore.html">git ignore</a></li>
         
       </ul>
     </nav>
     <main>
-      <div class="descripcion">
+      <div class="descripcion" id="SobreMi">
         <div class="imagen">
-          <img src="img/Pochacco.png" alt="Foto Lau">
+          <img src="img/Perfil2.jpeg" alt="Foto Lau">
         </div>
         <div class="titulo">
           <h1>Hola, soy Laura Fernández </h1>
@@ -48,7 +50,7 @@
         </div>
       </div>
 
-      <div class="habilidades">
+      <div class="habilidades" id="Habilidades">
 
         <h1>Mis Habilidades</h1>
         
@@ -76,5 +78,7 @@
         
       </div>
     </main>
+    <footer>
+    </footer>
   </body>
 </html>

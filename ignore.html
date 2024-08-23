@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Fuente Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav class="fixed-no">
+      <ul>
+        <li><h3>Laura Fernández</h3></li>
+        <li>
+          <a href="https://www.instagram.com/laurafg0312/"><i class="fa-brands fa-instagram"></i></a></i>
+        </li>
+      </ul>
+      
+      <ul>
+        
+        <li><a href="index.html" >Sobre mí</a></li>
+        <li><a href="index.html">Habilidades</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="ignore.html" class="selected">git ignore</a></li>
+        
+      </ul>
+    </nav>
+    <main>
+      
+        <div class="ignore">
+            <h1>¿Cómo utilizar git ignore?</h1>
+            <div class="pasos">
+                <h2>Paso 1: Crear un archivo .gitignore</h2>
+                <ul>
+                    <li>Navega a tu proyecto: Abre la terminal y navega al directorio de tu proyecto.</li>
+                    <li>Puedes crear un archivo .gitignore con el siguiente comando: 
+                        <ul>
+                            <li>touch .gitignore</li>
+                        </ul>
+                    </li>
+                    <li>Abre el archivo .gitignore con tu editor de texto preferido (puedes usar nano, vim, VS Code, etc.).</li>
+                </ul>
+                <h2>Paso 2: Especificar archivos o directorios a ignorar</h2>
+                <ul>
+                    <li>Añadir reglas de ignorar: En el archivo .gitignore, escribe las reglas para los archivos y carpetas que quieres ignorar.
+                        <ul>
+                            <li>Ignorar archivos temporales:
+                                <ul>
+                                    <li>*.tmp</li>
+                                    <li>*.log</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Ignorar directorio de configuración:
+                                <ul>
+                                    <li>config/</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Ignorar archivos binarios:
+                                <ul>
+                                    <li>**.exe</li>
+                                    <li>**.dll</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h2>Paso 3: Añadir y confirmar los cambios</h2>
+                <p>Añadir el archivo .gitignore a Git
+                    <ul>
+                        <li>
+                            git add .gitignore
+                        </li>
+                        <li>
+                            git commit -m "Añadido archivo .gitignore"
+                        </li>
+                    </ul>
+                </p>
+                <h2>Paso 4: Empujar los cambios a GitHub</h2>
+                <p>Finalmente, sube los cambios a tu repositorio remoto en GitHub con
+                    <ul>
+                        <li>
+                            git push origin main
+                        </li>
+                    </ul>
+                </p>
+                
+                
+            </div>
+            
+            
+        </div>
+        
+    </main>
+    <footer>
+    </footer>
+  </body>
+</html>

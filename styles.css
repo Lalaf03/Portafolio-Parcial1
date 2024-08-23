@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -9,11 +13,24 @@ body {
   background-color: white;
 }
 
-nav {
+.fixed {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem;
-  border-bottom: solid 3px #FDC787;
+  height: 5rem;
+  border-bottom: solid 5px #FDC787;
+  background-color: #012A61;
+}
+
+.fixed-no{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  height: 5rem;
+  border-bottom: solid 5px #FDC787;
   background-color: #012A61;
 }
 
@@ -26,7 +43,11 @@ nav h3{
 nav ul{
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
 }
+
 
 nav li{
   list-style: none;
@@ -44,59 +65,77 @@ a:hover{
   font-weight: bold;
 }
 
+.selected{
+  padding-bottom: 1rem;
+  border-bottom: solid 3px #FDC787;
+}
+
 .descripcion{
-  background-color: #021334;
+  background: linear-gradient( #275A91, #021334);
   color: white;
   max-width: 100%;
-  height: 500px;
-  display: flex;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: solid 3px #FDC787;
+  border-bottom: solid 5px #FDC787;
   margin-bottom: 0;
+  
 }
 
 .imagen img{
   width: 250px;
   max-width: 100%;
-  height: 250px;
-  border-radius: 50%;
+  height: auto;
+  border-radius: 20%;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .titulo{
   width: 300px;
   max-width: 100%;
+  font-size: 1.5rem;
   margin-left: 50px;
+  margin-right: 2rem;
+  text-shadow: 4px 4px rgba(3, 3, 3, 0.3);
 }
 
 .parrafo {
-  width: 400px;
+  width: 600px;
   max-width: 100%;
+  margin-right: 1rem;
 }
 
 .habilidades{
-  background-color: #275A91;
+  background: linear-gradient( to bottom right, #275A91, rgb(85, 138, 195));
   margin: 0;
   width: 100%;
-  height: 500px;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
+  align-items: center;
   color: white;
-  border-bottom: solid 3px #FDC787;
+  border-bottom: solid 5px #FDC787;
+  
 }
 
 .habilidades h1{
-  font-size: 5rem;
+  font-size: 3rem;
   margin-left: 30px;
   text-align: center;
+  text-shadow: 4px 4px rgba(3, 3, 3, 0.3);
 }
 
 .duras, .blandas{
-  background-color: #977086;
-  width: 500px;
+  background: linear-gradient( rgb(173, 84, 135), #e895c4);
+  box-shadow: 10px 10px rgba(22, 37, 61, 0.5);
+  max-width: 100%;
+  width: 450px;
+  height: 400px;
   max-width: 100%;
   border-radius: 3rem;
   margin: 30px;
@@ -116,51 +155,238 @@ a:hover{
   list-style-type: circle;
 }
 
+/*Proyectos*/
+
 .proyectos{
-  background-color: #021334;
+  background: linear-gradient( #195798, #021334);
   height: 800px;
   margin: 0;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  border-bottom: solid 5px #FDC787;
 }
 
 .links {
+  
   margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .links .pr{
-  width: 500px;
-  max-width: 100%;
-  margin: 20px;
-  background-color: #A5C5CC;
-  border-radius: 3rem;
-  height: 8rem;
+  height: auto;
   text-align: center;
   color: #021334;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .proyectos h1{
   margin: 0;
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  text-shadow: 4px 4px rgba(3, 3, 3, 0.3);
+}
+
+.icon{
+  width: 150px;
+  max-width: 100%;
+  margin-bottom: 2rem;
 }
 
 
-.pr a{
-  background-color: #FDC787;
+.links a{
   border: none;
+  border-radius: 3rem;
+  margin: 20px;
+  background: linear-gradient(#A5C5CC, #65bfd3);
+  width: 300px;
+  max-width: 100%;
   border-radius: 1.5rem;
   font-size: 1rem;
   text-decoration: none;
   color: #012A61;
+  margin-bottom: 2rem;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-.pr a:hover{
-  background-color: #ffdfb7;
+.links a:hover{
+  background: linear-gradient(#FDC787, #d0a46e);
   color: #977086;
   cursor: pointer;
 }
 
+/* Git ignore */
 
+.ignore{
+  background: linear-gradient( to bottom right, #275A91, rgb(85, 138, 195));
+  width: 100%;
+  height: auto;
+  color: white;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: solid 5px #FDC787;
+}
+
+.ignore h1{
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 4px 4px rgba(3, 3, 3, 0.3);
+}
+
+.pasos{
+  padding-bottom: 3rem;
+  width: 800px;
+  max-width: 100%;
+}
+
+.pasos h2{
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.pasos li{
+  padding: 10px 0;
+}
+
+
+footer{
+  background-color: #021334;
+  width: 100%;
+  height: 2rem;
+}
+
+
+@media (max-width: 1300px) {
+  
+  nav ul {
+    margin: 0;
+  }
+
+  .parrafo {
+    width: 800px;
+    max-width: 100%;
+    padding: 3rem;
+    text-align: center;
+  }
+
+  .habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .duras, .blandas {
+    width: 80%;
+    margin: 10px 0;
+    
+  }
+
+
+
+
+  .proyectos{
+    height: auto;
+  }
+
+  .links {
+    grid-template-columns: 1fr;
+  }
+
+
+
+  .ignore .pasos {
+    width: 90%;
+  }
+}
+
+@media  (max-width: 700px) {
+  .fixed {
+    flex-direction: column;
+    height: 10rem;
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+  
+  .fixed-no{
+    flex-direction: column;
+    height: 10rem;
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+  nav ul {
+    margin: 0;
+  }
+
+  
+
+  .descripcion{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .imagen img{
+    margin-right: 0;
+    margin-bottom: 2rem;
+    margin-top: 12rem;
+  }
+
+  .titulo{
+    text-align: center;
+  }
+
+  .parrafo {
+    width: 600px;
+    max-width: 100%;
+    padding: 3rem;
+    text-align: center;
+  }
+
+
+  .habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-bottom: 3rem;
+  }
+
+  .duras, .blandas {
+    width: 80%;
+    margin: 10px 0;
+    
+  }
+
+
+
+
+  .proyectos{
+    height: auto;
+  }
+
+  .links {
+    grid-template-columns: 1fr;
+  }
+
+
+
+  .ignore .pasos {
+    width: 90%;
+  }
+}
