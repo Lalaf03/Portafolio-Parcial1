@@ -123,6 +123,10 @@ a:hover{
   height: 800px;
   margin: 0;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .links {
