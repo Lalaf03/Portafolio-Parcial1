@@ -151,18 +151,17 @@ a:hover{
 }
 
 
-a{
+.pr a{
   background-color: #FDC787;
   border: none;
   border-radius: 1.5rem;
   font-size: 1rem;
-  width: 6rem;
-  height: 4rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   color: #012A61;
 }
 
-a:hover{
+.pr a:hover{
   background-color: #ffdfb7;
   color: #977086;
   cursor: pointer;
