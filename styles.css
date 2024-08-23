@@ -21,7 +21,6 @@ nav h3{
   max-width: 300px;
   width: 100%;
   color: white;
-  margin-left: 30px;
 }
 
 nav ul{
@@ -92,7 +91,6 @@ a:hover{
 .habilidades h1{
   font-size: 5rem;
   margin-left: 30px;
-  margin-top: 20%;
   text-align: center;
 }
 
@@ -124,16 +122,11 @@ a:hover{
   margin: 0;
   color: white;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .links {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
   margin-bottom: 2rem;
 }
 
@@ -160,7 +153,6 @@ a:hover{
   border: none;
   border-radius: 1.5rem;
   font-size: 1rem;
-  padding: 0.5rem 1rem;
   text-decoration: none;
   color: #012A61;
 }
